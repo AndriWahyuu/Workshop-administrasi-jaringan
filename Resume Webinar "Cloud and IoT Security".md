@@ -1,7 +1,7 @@
 
 # Webinar “Cloud and IoT Security”
 ## The Trend of Cloud Security 
-##### by Mr. Muhammad Salahuddien Manggalann 
+##### by Mr. Muhammad Salahuddien Manggalann - Senin, 27 Februari 2023
 
 Komputasi awan adalah model yang menawarkan layanan komputasi instan tanpa menanggung biaya.  Namun demikian, seperti teknologi lainnya, ini membawa kekurangannya.  Salah satu masalah utama adalah masalah keamanan dan privasi termasuk kebocoran data karena infrastruktur sumber daya komputasi bersama untuk memproses informasi bisnis rahasia - seperti kekayaan intelektual, rahasia dagang, dan informasi rahasia pelanggan, yang dapat menyebabkan aktor yang tidak sah dapat mengaksesnya.
 
