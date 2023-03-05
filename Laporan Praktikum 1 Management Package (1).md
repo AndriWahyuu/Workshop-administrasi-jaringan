@@ -101,10 +101,10 @@ caranya :
 5. Pastikan komputer terkneksi dengan jaringan. jika tidak terhubung dapat menggunakan perintah sudo dhclient -v
 
 
-![image.png]( {https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/0758a4443825995b57839970507bc7935056858c/Gambar/sudo%20apt%20update.PNG} )
+![image.png](Gambar/sudo%20apt%20update.PNG)
 
 Tampilan dari  /etc/apt/sources.list
-![image.png]( {https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/0758a4443825995b57839970507bc7935056858c/Gambar/Repository.PNG} )
+![image.png](Gambar/Repository.PNG)
 
 #### Arti dari Versi di Repository
 Software di Ubuntu repository dibagi menjadi lima kategori: main, universe, multiverse, restricted dan partner.
@@ -128,11 +128,11 @@ Midnight Commander merupakan sebuah aplikasi berbasis Console dengan desain term
 Berikut ini adalah cara menginstal MC di Ubuntu menggunakan perintah Terminal.
 - Buka terminal di Linux Anda. 
 - Untuk menginstal MC, jalankan perintah berikut di terminal:
-![image.png]( {https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/0758a4443825995b57839970507bc7935056858c/Gambar/sudo%20apt%20install%20mc.PNG} )
+![image.png](Gambar/sudo%20apt%20install%20mc.PNG)
 
 Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator.
 - Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "mc" di terminal 
-![image.png]( {https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/0758a4443825995b57839970507bc7935056858c/Gambar/sudo%20apt%20install%20mc.PNG} )
+![image.png](Gambar/mc.PNG)
 #
 
 #### 2. Paket htop dan net-tools**
@@ -143,10 +143,11 @@ Net-tools merupakan paket yang didalamnya terdapat tool-tool jaringan seperti ar
 Kita bisa langsung bersamaan menginstal 2 paket. dengan cara
 - Buka terminal di Linux Anda. 
 - Untuk menginstal MC, jalankan perintah berikut di terminal sudo apt remove package1 package2:
-![image.png]( {https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/0758a4443825995b57839970507bc7935056858c/Gambar/sudo%20apt%20install%20htop%20net-tools.PNG} )
+![image.png](Gambar/sudo%20apt%20install%20htop%20net-tools.PNG )
 Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator.
 
 - Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "htop" atau "net-tools" di terminal
 Hasil SS :
-![image.png]( {https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/0758a4443825995b57839970507bc7935056858c/Gambar/htop.PNG} )
+![image.png](Gambar/htop.PNG)
+
 
