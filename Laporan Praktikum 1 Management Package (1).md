@@ -105,6 +105,8 @@ caranya :
 Tampilan dari  /etc/apt/sources.list
 ![image.png](Gambar/Repository.PNG)
 
+#
+#
 #### Arti dari Versi di Repository
 Software di Ubuntu repository dibagi menjadi lima kategori: main, universe, multiverse, restricted dan partner.
 
@@ -114,6 +116,8 @@ Software di Ubuntu repository dibagi menjadi lima kategori: main, universe, mult
 - **Restricted** : Repositori terbatas yang terdiri dari driver berpemilik. Pembaruan dan Penambalan bug dilakukan oleh perusahaan atau pemegang hak milik dari software.
 - **Partner** : terdiri dari perangkat lunak berpemilik yang dipaket oleh Ubuntu untuk mitra mereka.
 
+#
+#
 #### Contoh Installasi Package
 Intallisasi package dapat menggunakan perintah APT. 
 Perintah apt adalah utilitas baris perintah untuk menginstal, memperbarui, menghapus dan mengelola paket deb di Ubuntu, Debian, dan distribusi Linux terkait. untuk menginstall paket dapat menggunakan perintah :
@@ -132,8 +136,8 @@ Berikut ini adalah cara menginstal MC di Ubuntu menggunakan perintah Terminal.
 Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator.
 - Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "mc" di terminal 
 ![image.png](Gambar/mc.PNG)
-#
 
+#
 #### 2. Paket htop dan net-tools**
 htop adalah sebuah program interaktif untuk memantau proses sistem dan mengelola proses. htop menyediakan daftar lengkap proses yang berjalan, sehingga kita bisa melihat proses yang menghabiskan banyak sumber daya (CPU/RAM).
 
