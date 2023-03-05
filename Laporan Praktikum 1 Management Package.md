@@ -91,20 +91,57 @@ Untuk pengguna Ubuntu perintah sudo sudah tersedia sedangkan untuk Debian perlu 
 #
 #### D. Packet Maintenance
 ##### Setting Repository
-##### Arti dari Versi di Repository
-##### Contoh Installasi Package
-##### 1. Paket mc
-MC (Midnight Commander) adalah sebuah aplikasi file manager untuk sistem operasi Linux yang tersedia sebagai package (pakage) pada repositori Ubuntu. 
-Berikut ini adalah cara menginstal MC di Ubuntu menggunakan perintah Terminal.
+untuk menyetting repository secara manual dapat mengedit file /etc/apt/sources.list dan menambahkan baris apt repository ke file tersebut.
+caranya :
+1. menggunakan perintah sudo nano /etc/apt/sources.list
+2. Tambahkan baris repositori ke akhir file. contoh : deb https://apache.bintray.com/couchdb-deb bionic main
+3. Baris di atas menunjukkan repository utama Ubuntu yang tersedia pada versi Bionic Beaver.
+4. Sebelum menginstal paket dari repositori yang baru ditambahkan,  harus memperbarui indeks paket menggunakan perintah sudo apt update
+5. Pastikan komputer terkneksi dengan jaringan. jika tidak terhubung dapat menggunakan perintah sudo dhclient -v
 
-- Buka terminal di Linux Anda. Anda dapat membukanya dengan menekan tombol Ctrl + Alt + T pada keyboard.
+
+Tampilan dari  /etc/apt/sources.list
+<gambar>
+
+##### Arti dari Versi di Repository
+Software di Ubuntu repository dibagi menjadi lima kategori: main, universe, multiverse, restricted dan partner.
+
+- **Main** : repositori yang diaktifkan secara default. Repositori utama hanya terdiri dari FOSS (free and open source software) yang dapat didistribusikan secara bebas tanpa batasan apa pun.Perangkat lunak dalam repositori ini didukung sepenuhnya oleh pengembang Ubuntu. Inilah yang akan disediakan oleh Ubuntu dengan pembaruan keamanan hingga sistem mencapai akhir masa pakainya.
+- **Universe** : terdiri dari perangkat lunak free dan open source, tetapi Ubuntu tidak menjamin update keamanan. Repositori Universe memiliki sejumlah besar perangkat lunak open source dan karenanya memungkinkan  untuk memiliki akses ke sejumlah besar perangkat lunak melalui apt package manager.
+- **Multiverse** : berisi perangkat lunak yang bukan FOSS. Karena masalah lisensi dan hukum, Ubuntu tidak dapat mengaktifkan repositori ini secara default dan tidak dapat menyediakan perbaikan dan pembaruan.
+- **Restricted** : Repositori terbatas yang terdiri dari driver berpemilik. Pembaruan dan Penambalan bug dilakukan oleh perusahaan atau pemegang hak milik dari software.
+- **Partner** : terdiri dari perangkat lunak berpemilik yang dipaket oleh Ubuntu untuk mitra mereka.
+
+##### Contoh Installasi Package
+Intallisasi package dapat menggunakan perintah APT. 
+Perintah apt adalah utilitas baris perintah untuk menginstal, memperbarui, menghapus dan mengelola paket deb di Ubuntu, Debian, dan distribusi Linux terkait. untuk menginstall paket dapat menggunakan perintah :
+1. sudo apt install package_name
+2. sudo apt remove package1 package2
+
+##### 1. Paket mc
+Midnight Commander merupakan sebuah aplikasi berbasis Console dengan desain terminal user interface. Aplikasi ini di kembangkan oleh Miguel de Icaza pada tahun 1994 dengan lisensi GNU General Public License. MC tentunya mempunyai fitur utama pada sebuah aplikasi file manager seperti copy, rename, hapus file, membuat file, membuat folder. Selain itu kita juga bisa menikmati fitur lain dari Midnight Commander untuk transfer file melalui FTP dan SFTP. 
+
+
+Berikut ini adalah cara menginstal MC di Ubuntu menggunakan perintah Terminal.
+- Buka terminal di Linux Anda. 
 - Untuk menginstal MC, jalankan perintah berikut di terminal:
 <gambar linux>
-Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator. Perintah "apt-get update" digunakan untuk memperbarui daftar paket perangkat lunak yang tersedia, sedangkan perintah "apt-get install mc" digunakan untuk menginstal paket Midnight Commander.
-- Tunggu hingga proses instalasi selesai. Terminal akan menampilkan pesan ketika instalasi selesai.
-- Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "mc" di terminal atau dengan mencarinya di menu aplikasi desktop.
-- Untuk keluar dari MC, tekan tombol F10 atau pilih "Exit" dari menu MC.
-##### Hasil SS :
+
+Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator.
+- Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "mc" di terminal 
 <gambar hasil ss package mc>
 #
 ##### **2. Paket htop dan net-tools**
+htop adalah sebuah program interaktif untuk memantau proses sistem dan mengelola proses. htop menyediakan daftar lengkap proses yang berjalan, sehingga kita bisa melihat proses yang menghabiskan banyak sumber daya (CPU/RAM).
+
+Net-tools merupakan paket yang didalamnya terdapat tool-tool jaringan seperti arp, hostname, ifconfig, netstat, rarp, route, plipconfig, slattach, mii-tool, iptunnel and ipmaddr. Dapat di install dengan cara # apt-get install net-tools.
+
+Kita bisa langsung bersamaan menginstal 2 paket. dengan cara
+- Buka terminal di Linux Anda. 
+- Untuk menginstal MC, jalankan perintah berikut di terminal sudo apt remove package1 package2:
+<gambar linux>
+
+Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator.
+- Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "htop" atau "net-tools" di terminal
+##### Hasil SS :
+<gambar hasil ss package mc>
