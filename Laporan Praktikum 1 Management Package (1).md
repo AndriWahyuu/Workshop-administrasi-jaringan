@@ -3,7 +3,6 @@
 # Laporan Praktikum Workshop Administrasi Jaringan
 ## Management Package
 
-<gambarlogo pens>
 ##### Dosen Pengampu: Dr. Ferry Astika Saputra ST, M.Sc
 ##### Nama: Andriana Wahyu Hapsari
 ##### Nrp: 3121600040
