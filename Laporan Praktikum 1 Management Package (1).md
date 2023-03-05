@@ -31,7 +31,9 @@ Pada masa ini sistem operasi telah menggunakan Graphical User Interface (GUI), y
 Pada generasi ini mulai diperkenalkan sistem operasi yang bisa digunakan pada perangkat lain. Dapat digunakan diperangkat seperti Laptop, Notebook dan Netbook. Pada masa ini, ada perkembangan yang sangat pesat. Salah satu teknologi terbaru yaitu virtualization sistem. Yang mana satu komputer dapat diclonning secara virtual. Sehingga di satu komputer dapat menggunakan multiboot system. Menggabungkan dua sistem operasi seperti linux dan windows. Mungkin hal ini lebih dikenal dengan sebutan dual boot.
 
 Pada generasi ini juga muncul sistem operasi baru. Dikenal dengan sebutan Mobile Computing. Perangkat didominasi oleh android, iOS, windows phone. Selain itu mulai dikenalkan layanan komputasi awan yaitu iCloud. Memungkinkan kita dapat mensinkronisasi foto atau document kita ke perangkat lain.
-##### **2. Debian dan Ubuntu**
+
+#
+#### **2. Debian dan Ubuntu**
 Pada tahun 1969, tim pengembang Bell Labs memulai proyek untuk membuat perangkat lunak umum untuk semua komputer dan menamakannya sebagai Unix.
 UNIX sederhana dan elegan, menggunakan bahasa C daripada bahasa rakitan dan kodenya dapat digunakan ulang.Karena dapat digunakan ulang, bagian dari kodenya yang sekarang biasa disebut kernel ditujukan untuk mengembangkan sistem operasi dan fungsi lainnya dan dapat digunakan pada sistem yang berbeda. Selain itu source code adalah open source.
 
