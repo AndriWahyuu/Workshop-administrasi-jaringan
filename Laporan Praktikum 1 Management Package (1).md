@@ -143,15 +143,16 @@ Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau admi
 #### 2. Paket htop dan net-tools**
 htop adalah sebuah program interaktif untuk memantau proses sistem dan mengelola proses. htop menyediakan daftar lengkap proses yang berjalan, sehingga kita bisa melihat proses yang menghabiskan banyak sumber daya (CPU/RAM).
 
-Net-tools merupakan paket yang didalamnya terdapat tool-tool jaringan seperti arp, hostname, ifconfig, netstat, rarp, route, plipconfig, slattach, mii-tool, iptunnel and ipmaddr. Dapat di install dengan cara # apt-get install net-tools.
+Net-tools merupakan paket yang didalamnya terdapat tool-tool jaringan seperti arp, hostname, ifconfig, netstat, rarp, route, plipconfig, slattach, mii-tool, iptunnel and ipmaddr. Dapat di install dengan cara # apt install net-tools.
 
 Kita bisa langsung bersamaan menginstal 2 paket. dengan cara
 - Buka terminal di Linux Anda. 
-- Untuk menginstal MC, jalankan perintah berikut di terminal sudo apt remove package1 package2:
+- Untuk menginstal MC, jalankan perintah berikut di terminal sudo apt install package1 package2:
 ![image.png](Gambar/sudo%20apt%20install%20htop%20net-tools.PNG )
+
 Perintah "sudo" digunakan untuk menjalankan perintah sebagai superuser atau administrator.
 
-- Setelah instalasi selesai, Anda dapat membuka Midnight Commander dengan mengetikkan "htop" atau "net-tools" di terminal
+- Setelah instalasi selesai, Anda dapat membuka htop dengan mengetikkan "htop" atau "net-tools" di terminal
 Hasil SS :
 ![image.png](Gambar/htop.PNG)
 
