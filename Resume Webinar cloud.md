@@ -34,7 +34,7 @@ Gunakan lapisan kontrol tambahan dalam manajemen Cloud dari 3% penyedia solusi p
 Gunakan "perjanjian back-to-back" dengan Penyedia Cloud Anda untuk memastikan kepatuhan standar keamanan penuh.
 
 ### D.	The Tools
-- **Software Defined Security**; 
+- **Software Defined Security**
 yakinkan kembali solusi Keamanan Cloud tertinggi yang tersedia. 
 - **Software Defined Securit**
 Kemajuan AAA untuk setiap Lapisan Cloud misalnya kombinasi biometrik wajib.
