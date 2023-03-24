@@ -20,14 +20,15 @@ Alan Tri Arbani Hidayat 3121600056<br>
 #
 ### **Setting IP Route dengan gateway 10.252.108.212**
 #
-### **Setting DHCP Server via DHCP Setup menjadi 192.168.X.100 - 192.168.X.254** <hr>
+### **Setting DHCP Server via DHCP Setup menjadi 192.168.X.100 - 192.168.X.254**
+#
 1. Pilih menu IP -> DHCP Server -> Klik DHCP Setup
 2. Pada jendela DHCP Server Interface pilih ether2
 3. Selanjutnya, ketika diminta menentukan IP Address yang akan digunakan sebagai default-gateway oleh DHCP Client masukkan IP 192.168.2.100 - 192.168.2.254** <br> <br>
 <img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/62929b8f3045fb2bf4ce99615caed6b33c8df07b/Minggu%205/images/No%203.png width="" height="500" /> <br> <br>
 
 ### **Sambungkan PC atau laptop ke jaringan, cek IP address pastikan IP add dari PC mendapatkan IP add dari dhcp server**
-<hr>
+#
 
 - Mengecek apakah komputer sudah mendaptkan dengan menggunakan perintah 
 ```
@@ -58,8 +59,7 @@ Konfigurasi IP VM dapat melalui GUI maupun CLI, berikut cara setting IP address 
 <img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/62929b8f3045fb2bf4ce99615caed6b33c8df07b/Minggu%205/images/No%206.png width="" height="500" /><br><br>
 
 ### **Konfigurasi NTP ke 0. id.pool.ntp.org 1. id.pool.ntp.org**
-<hr>
-
+#
 **Set Up NTP CLient**
 **1. Mengubah Pengaturan jam Sistem**
 - Untuk melihat daftar zona waktu menjalankan perintah : <br>
@@ -140,4 +140,6 @@ timedatectl
 <img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/7d2694c7939f4f7544cb516cd80c9b39f06d1489/Minggu%205/images/No%207.1.png width="" height="500" /> <br><br>
 
 ### 8. Konfigurasi sudo
+#
 ### 9. Ganti hostname VM **server10.kelompokX.takehome.com
+#
