@@ -15,25 +15,31 @@ Alan Tri Arbani Hidayat 3121600056<br>
 
 
 ### **Setting IP di Interface**
+#
 ### **Seting Default gateway 0.0.0.0/0**
+#
 ### **Setting IP Route dengan gateway 10.252.108.212**
+#
 ### **Setting DHCP Server via DHCP Setup menjadi 192.168.X.100 - 192.168.X.254** <hr>
-1. menu Pilih IP -> DHCP Server -> Klik DHCP Setup
+1. Pilih menu IP -> DHCP Server -> Klik DHCP Setup
 2. Pada jendela DHCP Server Interface pilih ether2
 3. Selanjutnya, ketika diminta menentukan IP Address yang akan digunakan sebagai default-gateway oleh DHCP Client masukkan IP 192.168.2.100 - 192.168.2.254** <br> <br>
 <img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/62929b8f3045fb2bf4ce99615caed6b33c8df07b/Minggu%205/images/No%203.png width="" height="500" /> <br> <br>
 
 ### **Sambungkan PC atau laptop ke jaringan, cek IP address pastikan IP add dari PC mendapatkan IP add dari dhcp server**
 <hr>
-- Mengecek ip Address menggunakan perintah : <br>
+
+- Mengecek apakah komputer sudah mendaptkan dengan menggunakan perintah 
 ```
 ip a
 ```
+
 Komputer sudah mendapatkan IP dari DHCP Server <br> <br>
 <img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/62929b8f3045fb2bf4ce99615caed6b33c8df07b/Minggu%205/images/No%204.png width="" height="500" /> <br>
 
 
 ### Power up nyalakan VM, pastikan konfigurasi jaringan BRIDGE dan pastikan mendapatkan IP add dari dhcp server 
+#
 <br><img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/62929b8f3045fb2bf4ce99615caed6b33c8df07b/Minggu%205/images/No%205.png width="" height="500" /> <br><br>
 Jika ternyata belum mendapatkan IP maka jalankan perintah : <br>
 ```
@@ -42,7 +48,7 @@ sudo dhclient -v
 <br><img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/62929b8f3045fb2bf4ce99615caed6b33c8df07b/Minggu%205/images/No%205.1.png width="" height="500" /> <br><br>
 
 ### **Konfigurasi IP VM Menjadi Static IP : 192.168.X.10** <br>
-<hr>
+#
 Konfigurasi IP VM dapat melalui GUI maupun CLI, berikut cara setting IP address static di Ubuntu Dekstop : <br>
 
 **1. Buka menu pengaturan, pilih tab jaringan. Kemudian klik ikon pengaturan jaringan.** <br>
@@ -84,16 +90,22 @@ sudo apt -y install ntp
 
 **3. Konfigurasi NTP Server**
 - mengedit `ntp.conf` dengan menggunkan perintah : <br>
-```sudo nano /etc/ntp.conf``` <br>
+```
+sudo nano /etc/ntp.conf
+``` 
 - memberikan command pada <br>
-`pool 0.ubuntu.pool.ntp.org iburst` <br>
-`pool 1.ubuntu.pool.ntp.org iburst` <br>
-`pool 2.ubuntu.pool.ntp.org iburst` <br>
-`pool 3.ubuntu.pool.ntp.org iburst` <br>
-`pool 4.ubuntu.pool.ntp.org iburst`<br> 
-`pool 5.ubuntu.pool.ntp.org iburst` <br><br>
+```
+pool 0.ubuntu.pool.ntp.org iburst 
+pool 1.ubuntu.pool.ntp.org iburst 
+pool 2.ubuntu.pool.ntp.org iburst
+pool 3.ubuntu.pool.ntp.org iburst 
+pool 4.ubuntu.pool.ntp.org iburst 
+pool 5.ubuntu.pool.ntp.org iburst` 
+```
 
-- Menambahkan baris <br>
+<br>
+
+- Menambahkan baris  <br>
 ```
 server 0.id.pool.ntp.org
 server 1.id.pool.ntp.org
@@ -102,17 +114,17 @@ server 4.id.pool.ntp.org
 ``` 
 jika sudah, simpan konfigurasi dan keluar dar teks editor. <br><br>
 
-- Merestrat NTP service menggunakan perintah : <br>
+- Restrat NTP service menggunakan perintah : <br>
 ```
 sudo systemctl restart ntp
 ``` 
 
 
-- Mengkonfirmasi apakah NTPservice telah aktif menggunkan perintah : <br>
+- Mengkonfirmasi apakah NTP service telah aktif menggunkan perintah : <br>
 ```
 systemctl status ntp
 ``` 
-- Cek keberhasilan konfigurasi dengan menggunakan command 
+- Cek keberhasilan konfigurasi dengan menggunakan command :
 ```
 ntpq -p
 ``` 
