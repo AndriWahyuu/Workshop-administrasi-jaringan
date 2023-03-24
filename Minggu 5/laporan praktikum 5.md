@@ -35,42 +35,36 @@ sudo timedatectl set-timezone Asia/Jakarta
 ```
 
 - Mengatur RTC ke UTC, menjalankan perintah <br>
-```sudo timedatectl set-local-rtc false``` <br> <br>
-
-2. **Konfigurasi NTP Client**
-- Untuk mensinkronisasi waktu perlu mengaktifkan NTP Client dengan menjalankan perintah : <br>
 ```
-sudo timedatectl set-ntp true
-``` 
-<br>
-
-- Menentukan server NTPyangakandgunakan dengan mengedit file `timesyncd.conf`.<br>
+sudo timedatectl set-local-rtc false
 ```
-sudo nano /etc/systemd/timesyncd.conf
-``` 
-<br>
+ 
+<br> 
 
-kemudian tambahkan baris berikut dan save : <br>
-``` 
-#NTP= NTP=0.id.pool.ntp.org, 1.id.poo.ntp.org
-``` 
-<br>
-
-### Build a local NTP Server
-1. **install NTP server**
-sebelum melakukan install maka perlumengubah kembali IP jaringan yang sebelumnya static menjadi DHCP kembali,
+2. **install NTP server**  <br>
+sebelum melakukan install maka perlumengubah kembali IP jaringan yang sebelumnya static menjadi DHCP kembali, <br>
 - Pertama update terlebih dahulu server dengan menggunakan perintah <br>
-```sudo apt update && sudo apt -y upgrade```
+```
+sudo apt update && sudo apt -y upgrade
+```
 
 - menginstall NTP Srver menggunakan perintah : <br>
-```sudo apt -y install ntp``
-<br><br>
+```
+sudo apt -y install ntp
+```
+<br>
 
-2. **Konfigurasi NTP Server**
+3. **Konfigurasi NTP Server**
 - mengedit `ntp.conf` dengan menggunkan perintah : <br>
 ```sudo nano /etc/ntp.conf``` <br>
-- memberikan command pada 
-`pool 0.ubuntu.pool.ntp.org iburst` , `pool 1.ubuntu.pool.ntp.org iburst` `pool 2.ubuntu.pool.ntp.org iburst` `pool 3.ubuntu.pool.ntp.org iburst` `pool 4.ubuntu.pool.ntp.org iburst`, `pool 5.ubuntu.pool.ntp.org iburst`  <br>
+- memberikan command pada <br>
+`pool 0.ubuntu.pool.ntp.org iburst` <br>
+`pool 1.ubuntu.pool.ntp.org iburst` <br>
+`pool 2.ubuntu.pool.ntp.org iburst` <br>
+`pool 3.ubuntu.pool.ntp.org iburst` <br>
+`pool 4.ubuntu.pool.ntp.org iburst`<br> 
+`pool 5.ubuntu.pool.ntp.org iburst` <br><br>
+
 - Menambahkan baris <br>
 ```
 server 0.id.pool.ntp.org
@@ -78,19 +72,32 @@ server 1.id.pool.ntp.org
 server 2.id.pool.ntp.org
 server 4.id.pool.ntp.org
 ``` 
-<br>jika sudah, simpan konfigurasi dan keluar dar teks editor. <br>
+jika sudah, simpan konfigurasi dan keluar dar teks editor. <br><br>
 
 - Merestrat NTP service menggunakan perintah : <br>
 ```
-sudo nano /etc/ntp.conf
+sudo systemctl restart ntp
 ``` 
 <br>
 
 - Mengkonfirmasi apakah NTPservice telah aktif menggunkan perintah : <br>
-`systemctl status ntp` <br>
-- Cek keberhasilan konfigurasi dengan menggunakan command `ntpq -p` <br>
+```
+systemctl status ntp
+``` 
+- Cek keberhasilan konfigurasi dengan menggunakan command 
+```
+ntpq -p
+``` 
 
-Hasilnya 
+<br>
+- Mengecek kembali settingan waktu dan tanggal menggunakan perintah : <br>
+``` 
+timedatectl
+```
+<br>
+
+### Hasilnya <br> <br>
+<img src=https://github.com/AndriWahyuu/Workshop-administrasi-jaringan/blob/7d2694c7939f4f7544cb516cd80c9b39f06d1489/Minggu%205/images/No%207.1.png width="" height="500" />
 
 
 
