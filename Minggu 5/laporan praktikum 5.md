@@ -19,9 +19,10 @@ Alan Tri Arbani Hidayat 3121600056<br>
 ### Setting IP Route dengan gateway 10.252.108.212
 ### Setting DHCP Server via DHCP Setup menjadi 192.168.X.100 - 192.168.X.254
 ### Sambungkan PC atau laptop ke jaringan, cek IP address pastikan IP add dari PC mendapatkan IP add dari dhcp server
-### Power up nyalakan VM, pastikan konfigurasi jaringan FRIDGE dan pastikan mendapatkan IP add dari dhcp server
-### Konfigurasi IP VM menjadi static**
+### Power up nyalakan VM, pastikan konfigurasi jaringan BRIDGE dan pastikan mendapatkan IP add dari dhcp server
+### Konfigurasi IP VM menjadi static
    **IP : 192.168.X.10**<br>
+
 
 ### Konfigurasi NTP ke
    0 : id.pool.ntp.org** <br>
@@ -41,8 +42,9 @@ sudo timedatectl set-local-rtc false
  
 <br> 
 
-2. **install NTP server**  <br>
-sebelum melakukan install maka perlumengubah kembali IP jaringan yang sebelumnya static menjadi DHCP kembali, <br>
+2. **install NTP server** 
+<br>
+Sebelum melakukan install maka perlu mengubah kembali IP jaringan yang sebelumnya static menjadi DHCP kembali. <br>
 - Pertama update terlebih dahulu server dengan menggunakan perintah <br>
 ```
 sudo apt update && sudo apt -y upgrade
@@ -101,6 +103,6 @@ timedatectl
 
 
 
-### 8. Konfigurasi sudo**
-### 9. Ganti hostname VM**
+### 8. Konfigurasi sudo
+### 9. Ganti hostname VM
    **server10.kelompokX.takehome.com**
