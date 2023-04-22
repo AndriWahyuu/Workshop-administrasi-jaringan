@@ -17,7 +17,7 @@
 
 Berikut adalah langkah-langkah instal Apache:
 
-- Memperbarui paket yang tersedia ke versi terbaru dengan perintah: 
+- Memperbarui paket yang tersedia ke versi terbaru: 
 
     ```
     sudo apt update
@@ -33,7 +33,7 @@ Berikut adalah langkah-langkah instal Apache:
 
 Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk menginsinkan akses dari luar ke port web default.
 
-- Melihat list dari ufw application yang tersedia menggunakan perintah:
+- Melihat list dari ufw application yang tersedia:
 
     ```
     sudo ufw app list
@@ -47,7 +47,7 @@ Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk me
     sudo ufw allow in 'Apache'
     ```
 
-- Setelah instalasi apache dan konfigurasi firewall pada langkah sebelumnya, Selanjutnya melakukan status dari apache dengan perintah dibawah ini.
+- Setelah instalasi apache dan konfigurasi firewall pada langkah sebelumnya, selanjutnya mengecek status dari apache dengan perintah dibawah ini.
 
     ```
     sudo systemctl status apache2
@@ -93,7 +93,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
 
 ## Instalasi PHP
 
-- Menginstal PHP, modul Apache PHP serta menggunakan MySQL dengan PHP dengan menjalan perintah:
+- Menginstal PHP, modul Apache PHP serta menggunakan MySQL dengan PHP menjalankan perintah:
 
     ```
     sudo apt install php libapache2-mod-php php-mysql
@@ -110,7 +110,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     <img src="./gambar/php_version.JPG">
 
 ## Instalasi FTP Server (PROFTPD)
-- Melakukan instalasi PROFTPD, dengan menjalankan perintah:
+- Melakukan instalasi PROFTPD:
 
     ```
     sudo apt install proftpd -y
