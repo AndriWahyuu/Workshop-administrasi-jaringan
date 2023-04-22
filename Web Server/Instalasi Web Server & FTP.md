@@ -9,8 +9,8 @@
 ## Anggota Kelompok:
 
 - Muhammad Fajrul Falah Subakti (3121600035)
-- Andriana Wahyu Hapsari - (3121600040)
-- Alan Tri Arbani Hidayat - (3121600056)
+- Andriana Wahyu Hapsari (3121600040)
+- Alan Tri Arbani Hidayat (3121600056)
 
 
 ## Instalasi Web Server (Apache)
