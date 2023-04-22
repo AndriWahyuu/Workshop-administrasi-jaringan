@@ -29,7 +29,7 @@ Berikut adalah langkah-langkah instal Apache:
     sudo apt install apache2
     ```
 
-    ![](../gambar/install_apache.JPG)
+    <img src="./gambar/install_apache.JPG">
 
 Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk menginsinkan akses dari luar ke port web default.
 
@@ -40,7 +40,7 @@ Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk me
     ```
     
     Maka Outputnya:
-    ![](../gambar/ufw_app_list.JPG)
+    <img src="./gambar/ufw_app_list.JPG">
 
 - Untuk mengizinkan apache diakses dari jaringan public yakni port 80 untuk HTTP, menjalankan perintah:
 
@@ -55,11 +55,11 @@ Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk me
     ```
     
     Maka Outputnya:
-    ![](../gambar/check_apache_installation.JPG)
+    <img src="./gambar/check_apache_installation.JPG">
 
 - Untuk memastikan berjalan dengan cara mengakses alamat IP dari server atau komputer yang terinstal Apache
     
-    ![](../gambar/test_apache.JPG)
+    <img src="./gambar/test_apache.JPG">
 
 
 
@@ -73,7 +73,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     sudo apt install mysql-server
     ```
 
-    ![](../gambar/install_MySQL_server.JPG)
+    <img src="./gambar/install_MySQL_server.JPG">
 
 - Setelah proses instalasi selesai, kemudian cek status apakah MySQL sudah berjalan dengan perintah:
 
@@ -81,7 +81,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     sudo service mysql status
     ```
 
-    ![](../gambar/check_MySQL_status.JPG)
+    <img src="./gambar/mySQL_status.JPG">
 
 - Untuk melihat versi MySQL :
 
@@ -89,7 +89,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     mysqladmin -u root -p version
     ```
 
-    ![](../gambar/mysql_version.JPG)
+    <img src="./gambar/mysql_version.JPG">
 
 
 
@@ -101,7 +101,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     sudo apt install php libapache2-mod-php php-mysql
     ```
 
-    ![](../gambar/install_PHP.JPG)
+    <img src="./gambar/install_PHP.JPG">
 
 - Setelah instalasi selesai, jalankan perintah berikut untuk mengonfirmasi versi PHP
 
@@ -109,7 +109,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     php -v
     ```
 
-    ![](../gambar/php%-v.JPG)
+    <img src="./gambar/php_version.JPG">
 
 ## Instalasi FTP Server (PROFTPD)
 - Melakukan instalasi PROFTPD, dengan menjalankan perintah:
@@ -118,7 +118,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     sudo apt install proftpd -y
     ```
 
-    ![](../gambar/install_ProFTPD.JPG)
+    <img src="./gambar/install_ProFTPD.JPG">
 
 - Memulai layanan dan mengaktifkan proftpd dengan perintah:
 
@@ -133,7 +133,7 @@ Pada Ubuntu 22.04 MySQL 8 sudah dimasukan sebagai versi default di repositori Ja
     sudo systemctl status proftpd
     ```
 
-    ![](../gambar/install _ProFTPD_2.JPG)
+    <img src="./gambar/install _ProFTPD_2.JPG">
 
 
 
