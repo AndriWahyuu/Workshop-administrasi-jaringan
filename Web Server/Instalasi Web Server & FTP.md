@@ -39,7 +39,6 @@ Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk me
     sudo ufw app list
     ```
     
-    Maka Outputnya:
     <img src="./gambar/ufw_app_list.JPG">
 
 - Untuk mengizinkan apache diakses dari jaringan public yakni port 80 untuk HTTP, menjalankan perintah:
@@ -54,7 +53,6 @@ Setelah instalasi selesai, Selanjutnya menyesuaikan pengaturan firewall untuk me
     sudo systemctl status apache2
     ```
     
-    Maka Outputnya:
     <img src="./gambar/check_apache_installation.JPG">
 
 - Untuk memastikan berjalan dengan cara mengakses alamat IP dari server atau komputer yang terinstal Apache
