@@ -1,7 +1,5 @@
 
-# Tugas Kelompok Instalasi Web Server & FTP
-
-
+# Instalasi Web Server & FTP
 
 ![](https://www.seekpng.com/png/detail/416-4164571_logo-pens-png-electronic-engineering-polytechnic-institute-of.png)
 
